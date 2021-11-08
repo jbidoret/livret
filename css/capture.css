@@ -1,0 +1,26 @@
+.background-video,
+.background-image,
+.background-canvas {
+  position: absolute;
+  top:0;
+  left:0;
+  height: var(--pagedjs-pagebox-height);
+  width: calc(var(--pagedjs-pagebox-width) * 2);
+  background-color: black;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(1);  
+}
+
+.pagedjs_right_page .background-video,
+.pagedjs_right_page .background-image,
+.pagedjs_right_page .background-canvas {
+  transform:translateX(-50%)
+}
+.background-video {
+  filter: grayscale(1) brightness(var(--brightness, 1)) contrast(var(--contrast, 1)) ;  
+}
+.pagedjs_page {
+  overflow: hidden;
+  position: relative;
+}

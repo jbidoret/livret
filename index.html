@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>pagedjs</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/interface.css" />
+    <link rel="stylesheet" type="text/css" href="css/capture.css" />
+    <script src="https://unpkg.com/css-tree@1.1.2/dist/csstree.min.js"></script>
+    <script src="js/paged.polyfill.js"></script>
+    <script src="js/interface.js"></script>
+    <script src="js/imposition.js"></script>
+    <style data-pagedjs-inserted-styles="true">
+      .modal,.tools { position: fixed; }
+      .text p+p::before { content: "¶ "; }
+
+      @media print {
+        .tools { display: none !important;}
+      }
+    </style>
+
+  </head>
+  <body>
+    
+    <section class="front-cover">
+      <article class="cover-1">
+        <h1><span>L’A</span><span>nar</span><span>chi</span><span>ste</span></h1>
+        <p class="byline">Élisée Reclus</p> 
+      </article>
+
+      <!--  book 2e de couv  -->
+      <article class="cover-2">
+        <div class="info">
+          <p>Paru dans <i>Almanach anarchiste pour 1902</i>, Paris.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- book text content -->
+    <section class="text">
+      <p>Par définition même, l’anarchiste est l’homme libre, celui qui n’a point de maître. Les idées qu’il professe sont bien siennes par le raisonnement. Sa volonté, née de la compréhension des choses, se concentre vers un but clairement défini&nbsp;; ses actes sont la réalisation directe de son dessein personnel. A côté de tous ceux qui répètent dévotement les paroles d’autrui ou les redites traditionnelles, qui assouplissent leur être au caprice d’un individu puissant, ou, ce qui est plus grave encore, aux oscillations de la foule, lui seul est un homme, lui seul a conscience de sa valeur en face de toutes ces choses molles et sans consistance qui n’osent pas vivre de leur propre vie.</p>
+      <p>Mais cet anarchiste qui s’est débarrassé moralement de la domination d’autrui et qui ne s’accoutume jamais à aucune des oppressions matérielles que des usurpateurs font peser sur lui, cet homme n’est pas encore son maître aussi longtemps qu’il ne s’est pas émancipé de ses passions irraisonnées. Il lui faut se connaître, se dégager de son propre caprice, de ses impulsions violentes, de toutes ses survivances d’animal préhistorique, non pour tuer ses instincts, mais pour les accorder harmonieusement avec l’ensemble de sa conduite. Libéré des autres hommes, il doit l’être également de soi-même pour voir clairement où se trouve la vérité cherchée, et comment il se dirigera vers elle sans faire un mouvement qui ne l’en rapproche, sans dire une parole qui ne la proclame.</p>
+      <p>Si l’anarchiste arrive à se connaître, par cela même il connaîtra son milieu, hommes et choses. L’observation et l’expérience lui auront montré que par elles-mêmes toute sa ferme compréhension de la vie toute sa fière volonté resteront impuissantes s’il ne les associe pas à d’autres compréhensions, à d’autres volontés. Seul, il serait facilement écrasé, mais, devenu force, il se groupe avec d’autres forces constituant une société d’union parfaite, puisque tous sont liés par la communion d’idées, la sympathie et le bon vouloir. En ce nouveau corps social, tous les camarades sont autant d’égaux se donnant mutuellement le même respect et les mêmes témoignages de solidarité. Ils sont frères désormais si les mille révoltes des isolés se transforment en une revendication collective, qui tôt ou tard nous donnera la société nouvelle, l’Harmonie.</p>
+      
+    </section>
+
+    <section class="empty">
+      <img src="reclus.jpg" alt="">
+    </section>
+
+
+    <!--  book 4e de couv  -->
+    <section class="back-cover">
+
+      <article class="cover-3-4">
+
+
+        <div class="colophon">
+          <h1>L’Anarchiste</h1>
+          <h2>Élisée Reclus</h2>
+          <p class="maison">
+            <img src="logo.svg" class="logo">
+            Maison des éditions
+          </p>
+          <small>
+            { font-fammily: Xahn Mono }
+          </small>
+        </div>
+      </article>
+      
+    </section>
+    
+
+  </body>
+</html>
