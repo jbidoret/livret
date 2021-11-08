@@ -50,7 +50,7 @@ body{
   .front-cover{ page: frontcover; }
   .back-cover{ page: backcover; }
   .blank { page: blank; break-before: always;}
-  .pagedjs_added_page {  --color-paper: papayawhip; } /* added pages */
+  .pagedjs_added_page {  --color-paper: white; } /* added pages */
 
   .empty{
     page: blank;
